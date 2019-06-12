@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Deployment
+kind: Application
 metadata:
-  name: argo-hello-world1
+  name: hello-world-app2
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/jdemend/hello-world.git
     targetRevision: test1
-    path: bundles/saas/helm/hello-world1
+    path: bundles/saas/helm/hello-world2
     directory:
       recurse: true
   destination:
