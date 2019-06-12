@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world1-{{ Tenant-state.state.tenant.name }}
+  name: hello-world1
   namespace: default
   labels:
-    app: hello-world1-{{ Tenant-state.state.tenant.name }}
+    app: hello-world1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world1-{{ Tenant-state.state.tenant.name }}
+      app: hello-world1
   template:
     metadata:
       labels:
-        app: hello-world1-{{ Tenant-state.state.tenant.name }}
+        app: hello-world1
     spec:
       containers:
-        - name: hello-world1-{{ Tenant-state.state.tenant.name }}
+        - name: hello-world1
           image: gcr.io/hello-minikube-zero-install/hello-node
           imagePullPolicy: Always
           ports:
