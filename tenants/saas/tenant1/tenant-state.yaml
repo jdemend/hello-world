@@ -3,5 +3,5 @@ state:
     project_id: tenant1-project
     cluster:
       name: default
-    tenant:
+  tenant:
       name: tenant1
