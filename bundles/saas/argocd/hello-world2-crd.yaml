@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/jdemend/hello-world.git
-    targetRevision: HEAD
+    targetRevision: test1
     path: bundles/saas/helm/hello-world2
   destination:
     server: https://kubernetes.default.svc
