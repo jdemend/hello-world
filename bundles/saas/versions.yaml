@@ -1,0 +1,11 @@
+versions:
+  org_api:
+    image_tag: master-1609273
+  org_engine:
+    image_tag: master-1609273
+  org_gateway:
+    image_tag: master
+  org_ui:
+    image_tag: master
+  org_worker:
+image_tag: master-1609273

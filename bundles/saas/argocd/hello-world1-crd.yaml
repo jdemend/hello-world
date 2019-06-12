@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-world1
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jdemend/hello-world.git
+    targetRevision: HEAD
+    path: bundles/saas/helm/hello-world1
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+     automated: {}

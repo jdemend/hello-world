@@ -1,0 +1,7 @@
+state:
+  gcp:
+    project_id: tenant1-project
+    cluster:
+      name: default
+    tenant:
+      name: tenant1
