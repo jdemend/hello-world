@@ -1,5 +1,5 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Application
+kind: Deployable
 metadata:
   name: hello-world-app1
   finalizers:
