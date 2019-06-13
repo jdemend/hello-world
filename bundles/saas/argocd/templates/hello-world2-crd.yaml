@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world-app2
+  name: hello-world-app2-v2
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/jdemend/hello-world.git
-    targetRevision: test1
-    path: bundles/saas/helm/hello-world2
+    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    targetRevision: HEAD
+    path: guestbook
     directory:
       recurse: true
   destination:
